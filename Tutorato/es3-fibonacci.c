@@ -20,8 +20,9 @@ int fibbonacci(int n) {
 }
 
 int main() {
-	int n = 5;
-	int i;
+	int n, i;
+	printf("inserisci un numero intero\n");
+	scanf("%d", &n);
 
 	printf("Factorial of %d: %d\n", n, factorial(n));
 	printf("Fibbonacci of %d: ", n);

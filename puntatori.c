@@ -1,6 +1,14 @@
+/*
+	l'operatore *, se usato su un puntatore, restituisce il valore contenuto all'indirizzo del puntatore
+	l'operatore &, usato su una variabile, restituisce l'indirizzo di memoria della variabile
+
+	int * -> indica che non si tratta di int ma di int pointer
+	*x -> se la variabile x è un int pointer, *x restituisce il valore contenuto all'indirizzo salvato in x.
+	&x -> se la variabile x è un int, &x restituisce l'jndirizzo di valore dove è salvato il contenuto di x
+*/
 #include <stdio.h>
 
-void inc(int *x){
+void inc(int* x){
 	*x = *x + 1;
 }
 

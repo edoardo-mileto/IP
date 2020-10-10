@@ -14,13 +14,13 @@ void inc(int* x){
 
 
 int main() {
-	int pippo = 82; //dichiarazione di un int
+	int pippo = 82; /*dichiarazione di un int*/
 
-	int *p_x; //dichiarazione di un puntatore
+	int *p_x; /*dichiarazione di un puntatore*/
 	int mem;
 	p_x = &pippo;
 
-	//stampo la variabile
+	/*stampo la variabile*/
 	printf("pippo: %d\n", pippo);
 
 	/*
@@ -32,12 +32,12 @@ int main() {
 	printf("locazione di memoria di pippo in hex:\t\t %x\n", &pippo);
 	printf("variabile puntatore verso pippo: \t\t %p\n", (void*) p_x);
 
-	// utilizzo l'operatore di dereferenziazione * per accedere al contenuto presente all'indirizzo salvato
+	/* utilizzo l'operatore di dereferenziazione * per accedere al contenuto presente all'indirizzo salvato */
 	printf("valore contenuto all'indirizzo di memoria \t %d\n", *p_x);
 
-	//uso la variabile puntatore per modificare il contenuto della memoria
+	/* uso la variabile puntatore per modificare il contenuto della memoria */
 	*p_x = 125;
-	//l'int pippo è diventato 125
+	/* l'int pippo è diventato 125 */
 	printf("%d\n", pippo);
 	inc(&pippo);
 	printf("%d\n", pippo);
